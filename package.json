@@ -1,0 +1,19 @@
+{
+  "name": "js-constraint-validation-form",
+  "version": "1.0.0",
+  "description": "A simple form module created utilizing the constraints and validation API in JavaScript. This has been packaged and deployed to NPM as well (publically).",
+  "main": "form-validation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Justin2172021/js-constraint-validation-form.git"
+  },
+  "author": "Justin2172021",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Justin2172021/js-constraint-validation-form/issues"
+  },
+  "homepage": "https://github.com/Justin2172021/js-constraint-validation-form#readme"
+}
