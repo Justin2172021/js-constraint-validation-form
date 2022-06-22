@@ -12,7 +12,21 @@
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p>Some text in the modal..</p>
+        <form id="form">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country" required />
+          <label for="zip">Zip Code:</label>
+          <input type="number" id="zip" name="zip" required />
+          <lable for="pw">Password:</lable>
+          <input type="text" id="pw" name="pw" required />
+          <lable for="conf-pw">Confirm Password:</lable>
+          <input type="text" id="conf-pw" name="conf-pw" required />
+          <button type="submit" class="submit-button">Submit Form</button>
+          <button type="reset" class="reset-button">Reset Form</button>
+        </form>
+        <div class="dom-msg"></div>
       </div>
     </div>
     <script src="./form-validation.js"></script>
