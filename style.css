@@ -17,7 +17,8 @@
     margin: 20% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 20%;
+    box-shadow: 5px 5px 5px black;
 }
 
 .close {
@@ -34,3 +35,27 @@
     cursor: pointer;
 }
 /* Modal CSS END */
+
+form {
+    display: grid;
+    width: 90%;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+.submit-button, .reset-button {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    width: 40%;
+}
+
+.dom-msg {
+    /*TODO: Remove border before project is done, its just there so I can see it!! */
+    border: 1px solid blue;
+    width: 90%;
+    height: 50px;
+    margin-top: 20px;
+}
