@@ -12,21 +12,53 @@
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <form id="form">
+        <form id="form" novalidate>
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required />
+          <span class="error-msgs" aria-live="polite"></span>
           <label for="country">Country:</label>
-          <input type="text" id="country" name="country" required />
+          <input
+            type="text"
+            id="country"
+            name="country"
+            required
+            minlength="2"
+          />
+          <span class="error-msgs" aria-live="polite"></span>
           <label for="zip">Zip Code:</label>
-          <input type="number" id="zip" name="zip" required />
-          <lable for="pw">Password:</lable>
-          <input type="text" id="pw" name="pw" required />
-          <lable for="conf-pw">Confirm Password:</lable>
-          <input type="text" id="conf-pw" name="conf-pw" required />
+          <input
+            type="text"
+            id="zip"
+            name="zip"
+            required
+            minlength="5"
+            maxlength="5"
+            pattern="\d\d\d\d\d"
+          />
+          <span class="error-msgs" aria-live="polite"></span>
+          <label for="pw">Password:</label>
+          <input
+            type="password"
+            id="pw"
+            name="pw"
+            required
+            minlength="6"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#\$%\^&\*]).{6,}"
+          />
+          <span class="error-msgs" aria-live="polite"></span>
+          <label for="conf-pw">Confirm Password:</label>
+          <input
+            type="password"
+            id="conf-pw"
+            name="conf-pw"
+            required
+            minlength="6"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#\$%\^&\*]).{6,}"
+          />
+          <span class="error-msgs" aria-live="polite"></span>
           <button type="submit" class="submit-button">Submit Form</button>
           <button type="reset" class="reset-button">Reset Form</button>
         </form>
-        <div class="dom-msg"></div>
       </div>
     </div>
     <script src="./form-validation.js"></script>
